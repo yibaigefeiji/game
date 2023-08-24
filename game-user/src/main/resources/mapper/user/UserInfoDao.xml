@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lijian.game.user.dao.UserInfoDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.lijian.game.user.entity.UserInfoEntity" id="userInfoMap">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="orderCount" column="order_count"/>
+        <result property="couponCount" column="coupon_count"/>
+        <result property="commentCount" column="comment_count"/>
+        <result property="attendCount" column="attend_count"/>
+        <result property="fansCount" column="fans_count"/>
+        <result property="collectProductCount" column="collect_product_count"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lijian.game.product.dao.SpuDetailDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.lijian.game.product.entity.SpuDetailEntity" id="spuDetailMap">
+        <result property="spuId" column="spu_id"/>
+        <result property="description" column="description"/>
+        <result property="supportChinese" column="support_chinese"/>
+        <result property="supportNumber" column="support_number"/>
+        <result property="supportHandle" column="support_handle"/>
+        <result property="supportMultiPersonMode" column="support_multi_person_mode"/>
+        <result property="supportRemote" column="support_remote"/>
+        <result property="supportPurchase" column="support_purchase"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>

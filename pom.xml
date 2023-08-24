@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lijian</groupId>
+    <artifactId>gulimall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>game</name>
+    <description>game</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>game-common</module>
+        <module>game-product</module>
+        <module>game-gateway</module>
+        <module>game-third-party</module>
+        <module>game-user</module>
+        <module>game-cart</module>
+        <module>game-ware</module>
+        <module>game-order</module>
+<!--        <module>game-seckill</module>-->
+        <module>game-forum</module>
+    </modules>
+</project>

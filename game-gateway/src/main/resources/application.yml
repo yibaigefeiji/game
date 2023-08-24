@@ -1,0 +1,91 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+
+        - id: product_route
+          uri: lb://game-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+
+        - id: product_route
+          uri: lb://game-user
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: ware_route
+          uri: lb://game-ware
+          predicates:
+            - Path=/api/ware/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: order_route
+          uri: lb://game-order
+          predicates:
+            - Path=/api/order/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: third_party_route
+          uri: lb://game-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*),/$\{segment}
+
+
+
+
+
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+              - Path=/api/**
+          filters:
+              - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
+        - id: mall_host_route
+          uri: lb://game-product
+          predicates:
+            - Host=www.kakaluote.ltd
+
+
+        - id: mall_host_route
+          uri: lb://game-user
+          predicates:
+            - Host=auth.kakaluote.ltd
+
+        - id: mall_host_route
+          uri: lb://game-cart
+          predicates:
+            - Host=cart.kakaluote.ltd
+
+
+        - id: mall_host_route
+          uri: lb://game-order
+          predicates:
+            - Host=order.kakaluote.ltd
+
+        - id: mall_host_route
+          uri: lb://game-order
+          predicates:
+            - Host=4983b890z1.imdo.co
+
+        - id: mall_host_route
+          uri: lb://game-flashSale
+          predicates:
+            - Host=item.kakaluote.ltd
+
+
+        - id: mall_host_route
+          uri: lb://game-forum
+          predicates:
+            - Host=forum.kakaluote.ltd
+
+

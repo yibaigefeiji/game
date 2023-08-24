@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lijian.game.forum.dao.ForumDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.lijian.game.forum.entity.ForumEntity" id="forumMap">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="text" column="text"/>
+        <result property="images" column="images"/>
+        <result property="userInfo" column="user_info"/>
+        <result property="comment" column="comment"/>
+        <result property="likes" column="likes"/>
+        <result property="time" column="time"/>
+        <result property="lable" column="lable"/>
+        <result property="gameName" column="game_name"/>
+        <result property="gameSpu" column="game_spu"/>
+    </resultMap>
+
+
+</mapper>

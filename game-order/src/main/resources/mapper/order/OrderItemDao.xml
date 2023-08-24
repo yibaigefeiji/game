@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lijian.game.order.dao.OrderItemDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.lijian.game.order.entity.OrderItemEntity" id="orderItemMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="orderSn" column="order_sn"/>
+        <result property="spuId" column="spu_id"/>
+        <result property="spuName" column="spu_name"/>
+        <result property="spuBrand" column="spu_brand"/>
+        <result property="skuId" column="sku_id"/>
+        <result property="skuName" column="sku_name"/>
+        <result property="skuPic" column="sku_pic"/>
+        <result property="skuPrice" column="sku_price"/>
+        <result property="skuQuantity" column="sku_quantity"/>
+        <result property="promotionAmount" column="promotion_amount"/>
+        <result property="couponAmount" column="coupon_amount"/>
+        <result property="realAmount" column="real_amount"/>
+    </resultMap>
+
+
+</mapper>
